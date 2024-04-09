@@ -13,6 +13,6 @@
 - Consistent Hashing
 - Code Splitting
 - Differential Bundling(to support old browsers)
-- Error Handlinh(better way of showing error on screen)
+- Error Handling(better way of showing error on screen)
 - Tree Shaking - remove unused code
-- Different dev and production bundles
+- Different dev and production bundles/builds
