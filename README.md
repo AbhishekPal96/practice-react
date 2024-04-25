@@ -16,3 +16,39 @@
 - Error Handling(better way of showing error on screen)
 - Tree Shaking - remove unused code
 - Different dev and production bundles/builds
+
+
+# Food Ordering app
+
+/**
+ * Header
+ * - Logo
+ * - Nav Items
+ * Body
+ * - Search
+ * - Restaurant Container
+ *   - Restaurant Card
+ *      -Img
+ *      -Name,Rating,cost,time
+ * Footer
+ * - Copyright
+ * - Address
+ * - Contact
+ */
+
+
+Two Types of Export/Import
+
+-Default Export/Import
+ export default Component;
+ import {Component} from ".....";
+
+-Named Export/Import
+ export const Component; 
+ import {Component} from ".....";
+
+
+ # React Hooks
+ It's just a normal JS utility function
+-useState()- Superpowerful state variable in React
+-useEffect()
