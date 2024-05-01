@@ -7,9 +7,9 @@ const RestaurantCard = (props) => {
       cuisines,
       avgRating,
       costForTwo,
-      deliveryTime,
+      aggregatedDiscountInfoV3,
       cloudinaryImageId,
-    } = resData?.data; // ?. Optional chaining
+    } = resData?.info; // ?. Optional chaining
     return (
       <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
         <img
@@ -23,8 +23,8 @@ const RestaurantCard = (props) => {
         <h3>{name}</h3>
         <h4>{cuisines.join(", ")}</h4>
         <h4>{avgRating} stars</h4>
-        <h4>{costForTwo / 100} FOR TWO</h4>
-        <h4>{deliveryTime}</h4>
+        <h4>{costForTwo}</h4>
+        <h4>{aggregatedDiscountInfoV3.header}</h4>
       </div>
     );
   };
