@@ -52,3 +52,6 @@ Two Types of Export/Import
  It's just a normal JS utility function
 -useState()- Superpowerful state variable in React
 -useEffect()
+ -If no dependency array, useEffect is called on every render.
+ -If dependency array is empty, useEffect is called just once on initial render.
+ -If dependency array has some dependency, useEffect is called everytime that dependency is changed.
