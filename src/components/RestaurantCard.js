@@ -2,6 +2,9 @@ import {CDN_URL} from "../utils/constants"
 
 const RestaurantCard = (props) => {
     const { resData } = props;
+    // console.log(resData);
+
+
     const {
       name,
       cuisines,
@@ -12,7 +15,7 @@ const RestaurantCard = (props) => {
     } = resData?.info; // ?. Optional chaining
     return (
       // <div className="p-4 m-4 w-[250px]" style={{ backgroundColor: "#f0f0f0" }}>
-      <div className="p-4 m-4 w-[250px] bg-gray-50 hover:bg-gray-100">
+      <div data-testid="resCard" className="p-4 m-4 w-[250px] bg-gray-50 hover:bg-gray-100">
         <img
           className="rounded-lg"
           src={
